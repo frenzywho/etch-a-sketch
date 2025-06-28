@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive, Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    color: antiquewhite;
+}
+
+main {
+    margin-top: 72px;
+    display: flex;
+    height: calc(100vh-100px);
+}
+
+header {
+    padding: 48px;
+    height: 100px;
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.left,
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvas {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 2px solid antiquewhite;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    background: white;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    color: #222;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s, transform 0.15s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #ffe082;
+    color: #222;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+    border-color: #ffd54f;
+}
+
+.button:active {
+    background: #ffd54f;
+    color: #111;
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.button svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
